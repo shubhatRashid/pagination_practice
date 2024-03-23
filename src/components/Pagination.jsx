@@ -12,7 +12,7 @@ const Pagination = ({currPage,setCurrPage,getPageData,allData}) => {
     }
 
     const jumpTopage = (jump) => {
-
+        setCurrPage(jump)
     }
     return (
         <div style={{display:'flex',width:'100%',gap:"25px",justifyContent:'space-around',alignItems:'center'}}>
