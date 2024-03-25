@@ -18,7 +18,7 @@ function App() {
   },[])
   
   return (
-    <Home data={data}/>
+    <Home data={data} />
   )
 }
 
