@@ -21,7 +21,7 @@ const Pagination = ({currPage,setCurrPage,getPageData,allData}) => {
             {currPage!=1 &&<button style={styles.buttonStyle} onClick={prePage}>prev</button>}
 
             <div style={{display:'flex',gap:"25px"}}>
-                <button style={styles.numberStyle}>{currPage}</button>
+                <button style={styles.selectedNumberStyle}>{currPage}</button>
                 {currPage+1 < lastPage+1 &&<button style={styles.numberStyle} onClick={() => jumpTopage(currPage+1)}>{currPage+1}</button>}
                 {currPage+2 < lastPage+1 &&<button style={styles.numberStyle} onClick={() => jumpTopage(currPage+2)}>{currPage+2}</button>}
                 <span>...</span>
@@ -42,6 +42,11 @@ const styles = {
     numberStyle:{
         color:'white',
         backgroundColor:'gray',
+        cursor:'pointer'
+    },
+    selectedNumberStyle:{
+        color:'black',
+        backgroundColor:'white',
         cursor:'pointer'
     }
 }

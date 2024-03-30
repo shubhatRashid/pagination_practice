@@ -18,7 +18,9 @@ const Home = ({data,initialData}) => {
     
     return (
         <div style={{width:'99%'}}>
-            <h1>Blog Posts</h1>
+            <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <h1>Blog Posts</h1>
+            </div>
             <div style={{display:'flex',flexDirection:'column',gap:'40px',alignItems:'center',width:'100%',padding:'10px'}}>
             {
                 pagedata.map((item,index)=> (
